@@ -3,27 +3,80 @@
     flex-direction: column;
     margin-left: 100px;
     margin-right: 100px;
-}
-.container_collapse{
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 76px;
-    
-    .container_collapse_1{
+    .container_infos{
         display: flex;
-        width: 582px;
-        padding: 10px 20px 10px 10px;
-        align-items: center;
-        
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logement_infos{
+        display: flex;
+        flex-direction: column;  
+    }
+    .logement_title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 52px;
+        color: #FF6060;
+        margin-top: 30px;
+    }
+    .logement_location{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #FF6060;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .container_tags{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+}
+.container_hostrating{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap : 21px;
+}
+.host {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 24px;
+    align-items: center;
+    gap: 10px;
+    &_name {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #FF6060;
+        text-align: right;
+    }
+    &_pict {
+        border-radius: 100px;
+        width: 64px;
+        height: 64px;
+    }
+}
+.container_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container_content{
+    display: flex;
+    flex-direction: row;
+    gap : 76px;
+    .container_collapse_1{
+        width: 47%;
     }
     .container_collapse_2{
-        display: flex;
-        width: 582px;
-        padding: 10px 20px 10px 10px;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        flex: 1 0 0;
-        align-self: stretch;
+        width: 47%;
     }
 }

@@ -1,0 +1,37 @@
+.tag {
+    &__description {
+        width: 115px;
+        height: auto;
+        overflow-wrap: break-word;
+        border-radius: 10px;
+        background-color: #FF6060;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+    }
+}
+
+/******************** Media queries ********************/
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+
+    .tag {
+        &__description {
+            font-size: 10px;
+            width: 84px;
+            height: 18px;
+            padding: 0px;
+        }
+    }
+
+}   
