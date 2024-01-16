@@ -1,6 +1,6 @@
 import React from 'react';
-import GrayStar from "../assets/gray-star.png";
-import RedStar from "../assets/red-star.png";
+import GrayStar from "../assets/star-inactive 1.png";
+import RedStar from "../assets/star-active 1.png";
 
 const Rating = (rating) => {
      rating = rating.rating
