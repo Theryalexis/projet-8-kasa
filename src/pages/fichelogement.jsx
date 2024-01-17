@@ -9,15 +9,10 @@ import Tags from '../components/tags';
 const Fichelogement = () => {
     const { id } = useParams();
     const selectedData = logements.find((item) => item.id === id);
-    const { rating, equipments} =selectedData;
-    const data =  {
-            equipments.map((content) => (
-              <p className="equipement-text" key={content}>
-                    {content}
-                    <br />
-              </p>
-        )),
-    }
+    const { rating } =selectedData;
+    const data = selectedData.equipments.map((equipment, index) => (
+        <div key={index}>{equipment}</div>
+      ))
 
     return (
         <div className='container_fichelogement'>
