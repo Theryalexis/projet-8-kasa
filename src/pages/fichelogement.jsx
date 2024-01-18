@@ -41,8 +41,8 @@ const Fichelogement = () => {
                 </div>
             </div>  
             <div className="container_content">
-                <Collapse  key={selectedData} title="Description" content={selectedData.description} />
-                <Collapse  key={selectedData} title="Description" content={data} />
+                <Collapse key="description" title="Description" content={selectedData.description} />
+                <Collapse key="equipments" title="Equipments" content={data} />
             </div>
         </div>
     );
