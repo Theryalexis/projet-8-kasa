@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import React from 'react';
 import logements from "../data/logement.json";
 import Carrousel from '../components/carrousel';
@@ -10,6 +10,9 @@ import Tags from '../components/tags';
 const Fichelogement = () => {
     const { id } = useParams();
     const selectedData = logements.find((item) => item.id === id);
+    if (!selectedData) {
+        return <Navigate to="/notfound" replace />;
+      }
     const { rating } =selectedData;
     const data = selectedData.equipments.map((equipment, index) => (
         <div key={index}>{equipment}</div>
