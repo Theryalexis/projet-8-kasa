@@ -6,6 +6,7 @@ import Rating from '../components/rating';
 import Collapse from "../components/collapse";
 import Tags from '../components/tags';
 
+
 const Fichelogement = () => {
     const { id } = useParams();
     const selectedData = logements.find((item) => item.id === id);
@@ -40,8 +41,8 @@ const Fichelogement = () => {
                 </div>
             </div>  
             <div className="container_content">
-                <div className="container_collapse_1"><Collapse  key={selectedData} title="Description" content={selectedData.description} /></div>
-                <div className="container_collapse_2"><Collapse  key={selectedData} title="Description" content={data} /></div>
+                <Collapse  key={selectedData} title="Description" content={selectedData.description} />
+                <Collapse  key={selectedData} title="Description" content={data} />
             </div>
         </div>
     );
