@@ -12,7 +12,7 @@ const apropos = () => {
             <div className='banner_apropos'>
                 <img src={bannerapropos} alt='bannerapropos' />
             </div>
-            <div class="about-collapse">
+            <div className="about-collapse">
                 {collapseData.map((item) => (
                     <Collapse key={item.id} title={item.title} content={item.content} />
                 ))}
